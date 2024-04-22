@@ -27,6 +27,8 @@
 			<div depth="5" class="hard front-side"> <div class="depth"></div> </div>
 			<div class="own-size"></div>
 			<div class="own-size even"></div>
+
+			<!--	Oxirgi Page Idsi misol uchun p86 yozib ketilgan, pastdagisi ham hudi shunaqa yoziladi	-->
 			<div class="hard fixed back-side p86"> <div class="depth"></div> </div>
 			<div class="hard p86"></div>
 		</div>
@@ -89,7 +91,7 @@ function loadApp() {
 
 	$( "#slider" ).slider({
 		min: 1,
-		max: 86,
+		max: 86, // Maximum pagelar soni kiriladi
 
 		start: function(event, ui) {
 
@@ -114,6 +116,7 @@ function loadApp() {
 
 			if (window._thumbPreview)
 				_thumbPreview.removeClass('show');
+			// Turn sliderlar tugash page
 			$('.sj-book').turn('page', 86);
 
 		}
@@ -170,7 +173,7 @@ function loadApp() {
 		autoCenter: true,
 		gradients: true,
 		duration: 1000,
-		pages: 86,
+		pages: 86, // End Page number
 		when: {
 			turning: function(e, page, view) {
 				var book = $(this),
