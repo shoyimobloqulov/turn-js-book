@@ -117,7 +117,7 @@ function loadApp() {
 			if (window._thumbPreview)
 				_thumbPreview.removeClass('show');
 			// Turn sliderlar tugash page
-			$('.sj-book').turn('page', 86);
+			$('.sj-book').turn('page', $(this).slider('value')*2 - 2);
 
 		}
 	});
